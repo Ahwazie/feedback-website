@@ -1,0 +1,256 @@
+/* Reset margin and padding for all elements */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a modern, professional background color for the body */
+body {
+    background-color: #EDF2F7;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #d5d3d3;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    /* Add shadow to the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-color {
+    color: #333333;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 0 20px; /* Add some padding on the sides */
+    max-width: 1200px; /* Maximum width of the navbar */
+    margin-left: auto; /* Centers the navbar */
+    margin-right: auto; /* Centers the navbar */
+    width: 100%;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #333333;
+    padding: 15px 20px;
+    display: inline-block;
+    /* Increase font size and use a stylish font */
+    font-size: 1.5em; /* 1.5 times the normal size */
+    font-family: 'Arial', sans-serif; /* Example of a stylish font */
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+.nav-links a:hover, .brand a:hover {
+    background-color: #222f5b;
+    color: #ffffff; /* This will change the text color to white on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add color to the transition property */
+    border-radius: 10px;
+}
+
+
+/* Optional: Add responsiveness to the navbar */
+@media screen and (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        text-align: center;
+        padding: 10px 20px;
+        width: 100%;
+        display: block;
+    }
+}
+
+hr.modern-hr {
+    border: none; /* Remove default border styling */
+    height: 2px; /* Thickness of the hr */
+    background-image: linear-gradient(to right, rgba(245, 245, 245, 0), rgba(50, 50, 50, 1), rgba(245, 245, 245, 0)); /* Gradient from transparent light grey to solid dark grey to transparent light grey */
+    margin: 2rem 0; /* Vertical spacing above and below the hr */
+}
+
+
+
+/* ... other styles ... */
+
+/* ... other styles ... */
+
+/* Hero Section Styles */
+.hero {
+    background-color: #D9E8F5;
+    color: #1F4E79;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 32px; /* Add some space from the top element */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.hero h2 {
+    margin-bottom: 10px; /* Space below the heading */
+    font-size: 2.5em; /* Larger font size for the heading */
+    color: #1F4E79; /* White text color for contrast */
+    font-weight: bold;
+    letter-spacing: 1px; /* Subtle spacing between letters */
+}
+
+/* Optional: responsive adjustments */
+@media (max-width: 600px) {
+    .hero {
+        padding: 20px 10px; /* Less padding on smaller screens */
+    }
+
+    .hero h2 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+}
+
+/* ... other styles ... */
+
+/* ... other styles ... */
+
+/* Reviews container */
+.reviews-container {
+    display: grid;
+    width: 100%; /* Ensure the grid takes up the full width */
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: 0 auto; /* Center the grid horizontally */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create 5 columns */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding around the entire grid */
+}
+
+/* Individual review items */
+.review-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.review-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Review images */
+.review-image {
+    width: 100%; /* Makes the image as wide as its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Cover the area without stretching */
+    border-top-left-radius: 8px; /* Match the container's border-radius */
+    border-top-right-radius: 8px; /* Match the container's border-radius */
+}
+
+/* Review content */
+.review-content {
+    padding: 15px; /* Padding within the content area */
+    text-align: center; /* Center the text */
+}
+
+/* Review description */
+.review-description {
+    margin-bottom: 15px; /* Space above the 'Go' button */
+    color: #555555;
+}
+
+/* 'Go' button */
+.review-go-button {
+    padding: 10px 20px; /* Padding within the button */
+    background-color: #5C6BC0; /* Matching the hero section for consistency */
+    color: #FFFFFF; /* White text for readability */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 20px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease-in-out; /* Smooth background transition */
+    text-transform: uppercase; /* Capitalize text */
+    font-weight: bold;
+}
+
+.review-go-button:hover {
+    background-color: #3949AB; /* Darken button on hover */
+}
+
+.site-footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 50px; /* Some padding */
+    text-align: center; /* Center align the content */
+}
+
+.footer-content h3 {
+    margin: 0 0 10px; /* No margin at top and bottom, 10px at the bottom */
+    padding-bottom: 10px;
+}
+
+.footer-content h4 {
+    padding-bottom: 10px;
+}
+
+.footer-icons {
+    /* Centering the icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Creates a gap between icons */
+    padding-bottom: 10px;
+}
+
+.footer-icon img {
+    width: 24px; /* Example size, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
+}
+
+.footer-icon:hover img {
+    transform: scale(1.1); /* Slight scale up effect on hover */
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .reviews-container {
+        grid-template-columns: repeat(4, 1fr); /* Adjust to 4 columns for smaller desktops */
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets and small desktops */
+    }
+    .review-image {
+        width: 100%; /* Maintain full width */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+        aspect-ratio: 1 / 1; /* Ensures the image is always square */
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+}
+
+/* ... other styles ... */
